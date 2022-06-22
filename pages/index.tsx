@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .pasteString("We are ")
+                  .pasteString("We are ", null)
                   .typeString("biohackers")
                   .pauseFor(1000)
                   .deleteChars(10)
