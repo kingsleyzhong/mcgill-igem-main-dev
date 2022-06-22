@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         </video>
         {/* <ReactPlayer url="/videos/homepage_video.mp4" loop={true} playing={true} volume={0} className="absolute top-0 left-0 w-full h-full" /> */}
         <div className="bg-black text-white py-2 text-center font-source-code-pro">
-          "People confuse what's impossible today with what's impossible
-          tomorrow" -George M. Church
+        &#34;People confuse what's impossible today with what's impossible
+          tomorrow&#34; -George M. Church
         </div>
         <div className="bg-[url('/cells.jpg')] text-white h-[32rem] bg-cover">
           {/* <img src="/cells.jpg"/> */}
