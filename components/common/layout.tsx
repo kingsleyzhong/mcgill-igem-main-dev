@@ -9,8 +9,8 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => (
   <>
+    <div className="">
     <Navbar />
-    <div className="cursor-igem mt-12">
       {props.children}
     <Footer />
     </div>

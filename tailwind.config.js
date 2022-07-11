@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         'source-code-pro': ['Source Code Pro', 'monospace'],
         'montserrat': ['Montserrat', 'sans-serif'],
+        'signika': ['Signika', 'sans-serif'],
+        'mono': ['Ubuntu Mono', 'monospace'],
+        'asap': ['Asap', 'sans-serif'],
       }
     },
   },

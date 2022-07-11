@@ -1,11 +1,67 @@
 import Link from "next/link";
-import logo from "../public/vercel.svg";
 import Image from "next/image";
+import styles from "../../styles/Navbar.module.scss";
 
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  // Use this code if the topbar is to change based on the scroll position
+  const [navOpen, setNavOpen] = useState(false);
+
+  function handleNavClick() {
+    setNavOpen(!navOpen);
+  }
+
+  return (
+    <nav className="fixed w-full z-[1000] h-[4.5rem] bg-[#ffffff0]">
+      <div className="hover:cursor-pointer fixed float-left ml-4 mt-4 h-10 z-[2000]">
+        <Link href="/">
+          <img
+            src="mcgill-igem-logo.png"
+            alt="McGill IGEM Logo"
+            className="h-full w-full"
+          />
+        </Link>
+      </div>
+
+      <div className={navOpen ? styles.bgoopen : ""}></div>
+      <div className={!navOpen ? styles.bg : ""}></div>
+
+      <div className={styles.burgerAlign}>
+        <div
+          className={`${styles.simplyburger} ${
+            navOpen ? styles.simplyburgeropen : null
+          }`}
+          onClick={handleNavClick}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      {navOpen && (
+        <div className="fixed w-full h-full text-white">
+          <div className="bothalign">
+            <ul className={styles.navanim}>
+              <li className="text-center">1 About Us</li>
+              <li className="text-center">2 Stuff</li>
+              <li className="text-center">3 Stuff</li>
+            </ul>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
+
+{
+  /* 
+Old Navbar
+
+
+ // Use this code if the topbar is to change based on the scroll position
   // const [atTop, setAtTop] = useState(true);
 
   // const handleScroll = () => {
@@ -20,19 +76,22 @@ const Navbar = () => {
   //   window.addEventListener("scroll", handleScroll);
   // })
 
-  return(
-  <nav className="px-4 z-50 h-auto flex md:flex-wrap flex-col md:flex-row items-center bg-white text-mcgill-red fixed w-full top-0">
+<nav className="px-4 z-50 h-auto flex md:flex-wrap flex-col md:flex-row items-center bg-white text-mcgill-red fixed w-full top-0">
     <div className="ml-5 h-10 hover:cursor-pointer">
       <Link href="/">
         <img src="mcgill-igem-logo.png" alt="McGill IGEM Logo" className="h-full w-full" />
-        {/* Image */}
+
       </Link>
     </div>
+
+  </nav>
+
+
     <div className="py-1 ml-auto group flex justify-center hover:shadow">
       <div className="hover:text-mcgill-mahogany px-4 py-2 hover:shadow">
         <Link href="/test">About Us</Link>
       </div>
-      {/* Dropdown Menu */}
+      
       <div className="group-hover:block absolute h-auto mt-10 hidden">
         <ul className="block w-full bg-white hover:shadow">
           <li className="px-6 py-2 hover:shadow">
@@ -60,7 +119,7 @@ const Navbar = () => {
       <div className="hover:text-mcgill-mahogany px-4 py-2 hover:shadow">
         <Link href="/test">Partners</Link>
       </div>
-      {/* Dropdown Menu */}
+
       <div className="group-hover:block absolute h-auto mt-10 hidden">
         <ul className="block w-full bg-white hover:shadow">
           <li className="px-6 py-2 hover:shadow">
@@ -88,9 +147,5 @@ const Navbar = () => {
       <Link href="/test">Contact Us</Link>
     </div>
 
-  </nav>
-)
-};
-
-export default Navbar;
-
+*/
+}
