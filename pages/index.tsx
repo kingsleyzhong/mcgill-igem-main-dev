@@ -7,6 +7,7 @@ import Marquee from "react-fast-marquee";
 import { useState, useEffect } from "react";
 
 import Typewriter from "typewriter-effect";
+import Loading from "../components/common/loading";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
           className="z-10 relative w-full max-h-screen object-fill"
         >
           <source src="videos/homepage_video.mp4" type="video/mp4" />
+          <Loading/>
         </video>
         </div>
         {/* <ReactPlayer url="/videos/homepage_video.mp4" loop={true} playing={true} volume={0} className="absolute top-0 left-0 w-full h-full" /> */}
