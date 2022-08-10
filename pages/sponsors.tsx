@@ -50,7 +50,7 @@ const Standard: NextPage = () => {
                 width={406}
                 height={301}
                 layout="responsive"
-                src="/sponsors/ssmu.png"
+                src="/sponsors/SSMU.png"
               />
             </a>
           </div>
@@ -60,7 +60,7 @@ const Standard: NextPage = () => {
                 width={603}
                 height={316}
                 layout="responsive"
-                src="/sponsors/pfizer.png"
+                src="/sponsors/Pfizer.png"
               />
             </a>
           </div>
@@ -72,7 +72,7 @@ const Standard: NextPage = () => {
               width={819}
               height={193}
               layout="responsive"
-              src="/sponsors/gairdner.png"
+              src="/sponsors/Gairdner.png"
             />
           </a>
         </div>
@@ -86,7 +86,7 @@ const Standard: NextPage = () => {
                 width={400}
                 height={100}
                 layout="responsive"
-                src="/sponsors/snapgene.png"
+                src="/sponsors/SnapGene.png"
               />
             </a>
           </div>
@@ -96,7 +96,7 @@ const Standard: NextPage = () => {
                 width={514}
                 height={229}
                 layout="responsive"
-                src="/sponsors/minipcr.png"
+                src="/sponsors/MiniPCR.png"
               />
             </a>
           </div>
@@ -106,7 +106,7 @@ const Standard: NextPage = () => {
                 width={461}
                 height={179}
                 layout="responsive"
-                src="/sponsors/new england biolabs.png"
+                src="/sponsors/New England Biolabs.png"
               />
             </a>
           </div>
@@ -121,7 +121,7 @@ const Standard: NextPage = () => {
                 width={495}
                 height={105}
                 layout="responsive"
-                src="/sponsors/benchling.png"
+                src="/sponsors/Benchling.png"
               />
             </a>
           </div>
@@ -131,7 +131,7 @@ const Standard: NextPage = () => {
                 width={586}
                 height={199}
                 layout="responsive"
-                src="/sponsors/twist biosciences.png"
+                src="/sponsors/Twist Biosciences.png"
               />
             </a>
           </div>
@@ -167,7 +167,7 @@ const Standard: NextPage = () => {
                 width={355}
                 height={124}
                 layout="responsive"
-                src="/sponsors/idt.png"
+                src="/sponsors/IDT.png"
               />
             </a>
           </div>
@@ -177,7 +177,7 @@ const Standard: NextPage = () => {
                 width={466}
                 height={164}
                 layout="responsive"
-                src="/sponsors/mrm.png"
+                src="/sponsors/MRM.png"
               />
             </a>
           </div>
@@ -187,7 +187,7 @@ const Standard: NextPage = () => {
                 width={314}
                 height={150}
                 layout="responsive"
-                src="/sponsors/beckman coulter.png"
+                src="/sponsors/Beckman Coulter.png"
               />
             </a>
           </div>
