@@ -12,6 +12,10 @@ const Home: NextPage = () => {
   return (
     <div className="bg-gray-200">
       <Layout>
+        <div className="snap-y snap-mandatory">
+
+        <div className="snap-start">
+
         <video
           autoPlay
           muted
@@ -20,18 +24,20 @@ const Home: NextPage = () => {
         >
           <source src="videos/homepage_video.mp4" type="video/mp4" />
         </video>
+        </div>
         {/* <ReactPlayer url="/videos/homepage_video.mp4" loop={true} playing={true} volume={0} className="absolute top-0 left-0 w-full h-full" /> */}
-        <div className="cellsSection pt-8 pb-8">
+        <div className="cellsSection pt-8 pb-8 snap-start" >
 
-          <div className="text-white w-full relative">
+          <div className="text-white w-full relative ">
             <div className="absolute -top-8 z-50 bg-black w-full h-8"/>
             <div className="absolute -top-8 left-0 z-10 h-[10rem] w-full gradienttop" />
-            <img className="w-full" src="/cells.jpg" />
-            <div className="text-5xl absolute top-[60%] left-[58%] font-bold">
-              <Typewriter
+            <img className="w-full" src="/cells.jpg" /> 
+            relative
+            <div className="uppercase leading-none text-[5.8vw] absolute top-[55%] left-[55%] font-semibold font-mono">
+            <span>We are</span> <span className="inline-block"><Typewriter
+                
                 onInit={(typewriter) => {
                   typewriter
-                    .pasteString("We are ", null)
                     .typeString("biohackers")
                     .pauseFor(1000)
                     .deleteChars(10)
@@ -49,13 +55,15 @@ const Home: NextPage = () => {
                   deleteSpeed: 8,
                 }}
               />
+              </span>
             </div>
             <div className="absolute -bottom-8 left-0 z-10 h-[10rem] w-full gradientbottom"></div>
-            <div className="absolute -bottom-8 bg-black z-50 text-white py-2 text-center font-source-code-pro w-full">
+            <div className="absolute -bottom-8 bg-black z-50 text-white py-4 text-center font-source-code-pro w-full">
               &#34;People confuse what&#39;s impossible today with what&#39;s
               impossible tomorrow&#34; -George M. Church
             </div>
           </div>
+        </div>
         </div>
 
         <div className="bg-black text-mcgill-red flex">
@@ -73,7 +81,7 @@ const Home: NextPage = () => {
 
         <div className="">
           <div className="image_effect w-[110%] ml-[-10%] p-4">
-          <img src="/team_pic.png" />
+          <img src="/team_pic.png"/>
           </div>
           <span className="hometext float-right text-right pt-8 pr-10">
             OUR WORK
@@ -99,9 +107,9 @@ const Home: NextPage = () => {
 
           <img src="bac_culture.png" className=""></img>
           <div className="bothalign z-30 w-full">
-            <div className="left_marquee w-full font-bold text-[13.5vw] -my-12">BUILD</div>
-            <div className="right_marquee w-full font-bold text-[13.5vw] -my-12">BIOLOGY</div>
-            <div className="left_marquee w-full font-bold text-[13.5vw] -my-12">BEYOND</div>
+            <div className="left_marquee w-full font-black text-[13.5vw] -my-12  font-montserrat">BUILD</div>
+            <div className="right_marquee w-full font-normal text-[13.5vw] -my-12  font-ibarra">BIOLOGY</div>
+            <div className="left_marquee w-full font-normal text-[13.5vw] -my-12  font-monoton">BEYOND</div>
           </div>
 
 
@@ -109,7 +117,7 @@ const Home: NextPage = () => {
           <div className="absolute bottom-0 left-0 z-10 h-[13rem] w-full  gradientbottom2"/>
         
 
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -134,7 +142,7 @@ const Home: NextPage = () => {
           className="w-1/4 absolute left-0 top-0"
         >
           <source src="videos/vert.mp4" type="video/mp4" />
-        </video>
+        </video> */}
 
         </div>
 

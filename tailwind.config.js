@@ -20,6 +20,8 @@ module.exports = {
         'signika': ['Signika', 'sans-serif'],
         'mono': ['Ubuntu Mono', 'monospace'],
         'asap': ['Asap', 'sans-serif'],
+        'ibarra': ['Ibarra Real Nova', 'serif'],
+        'monoton': ['Monoton', 'cursive'],
       }
     },
   },

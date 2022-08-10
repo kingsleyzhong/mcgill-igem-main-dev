@@ -8,11 +8,11 @@ const Mission: NextPage = () => {
   return (
     <Layout>
       <div className="w-full bg-black text-white pt-20  tracking-tight">
-        <div className="mb-10 pl-20">
+        <div className="mb-10 pl-[10rem]">
           <div className="py-10 capitalize font-signika font-light text-3xl">
             ABOUT US
           </div>
-          <div className="capitalize font-signika font-mediumtext-8xl">
+          <div className="capitalize font-signika font-medium text-8xl">
             OUR MISSION
           </div>
           <div className="py-10 capitalize font-mono font-bold  text-l">
@@ -21,7 +21,7 @@ const Mission: NextPage = () => {
           </div>
         </div>
 
-        <div className="py-10 pl-20">
+        <div className="py-10 pl-40">
           <div className="w-1/2 font-signika font-regular text-5xl">
             The training grounds for a{" "}
             <span className="text-mcgill-red">new</span> generation of
@@ -42,11 +42,16 @@ const Mission: NextPage = () => {
         </div>
         {/* <div className="h-10 w-full bg-blue-400"/> */}
 
-        <div className="py-10 my-5 px-20 bg-mcgill-red font-signika font-medium text-7xl ">
+        <div className="py-10 my-5 px-40 bg-mcgill-red font-signika font-medium text-7xl ">
           Experience the entire research life cycle, from benchtop to bedside.
         </div>
 
-        <div className="py-10 pl-20">
+        <div className="py-10 pl-40">
+          <Link href="/about">
+            <div className="float-right hover:translate-x-0.5 pr-10 font-signika text-mcgill-red cursor-pointer">
+              &#10230; <span className="hover:underline">Our Team</span>
+            </div>
+          </Link>
           <div className="w-1/2 font-signika font-regular text-5xl">
             We are students and teachers, engineers and philosophers.
           </div>
@@ -70,10 +75,28 @@ const Mission: NextPage = () => {
           </div>
         </div>
 
-        <div className="py-10 pl-20 bg-white text-black flex relative">
-          
 
-          <div>
+        <div className="py-10 pl-40 bg-white text-black relative">
+       
+        <Link href="/join">
+            <div className="float-right hover:translate-x-0.5 pr-10 font-signika text-mcgill-red cursor-pointer">
+              &#10230; <span className="hover:underline">Join Us</span>
+            </div>
+          </Link>
+
+
+          {/* <div className="float-right w-1/3 translate-y-[100%] translate-x-10">
+          <div className="translate-y-[50%]">
+              <Image
+                src="/igem.png"
+                layout="responsive"
+                width={563}
+                height={382}
+                className=""
+              />
+            </div>
+          </div> */}
+
             <div className="w-1/2 font-signika font-regular text-5xl">
               Representing McGill on the international stage.
             </div>
@@ -97,13 +120,9 @@ const Mission: NextPage = () => {
             </div>
           </div>
 
-          <div className="">
-            <img src="/igem.png" alt="iGEM" className="bothalignb" />
-          </div>
-          {/* <Image src="/igem.png" alt="iGEM" layout="fill"/> */}
-          {/* <img src="/igem.png" alt="iGEM/> */}
+      
+
         </div>
-      </div>
     </Layout>
   );
 };

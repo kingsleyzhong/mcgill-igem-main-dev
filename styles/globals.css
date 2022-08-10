@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Signika:wght@300;400;500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.bothalign {
+
+.bothalign { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,7 +73,7 @@ text-transform: uppercase;
 }
 
 .left_marquee {
-    animation: scroll-left 15s cubic-bezier(.1,.35,.9,.65) infinite;
+    animation: scroll-left 30s cubic-bezier(.1,.35,.9,.65) infinite;
 }
 
 
@@ -87,7 +87,7 @@ text-transform: uppercase;
 }
 
 .right_marquee {
-    animation: scroll-right 15s cubic-bezier(.1,.35,.9,.65) infinite;
+    animation: scroll-right 30s cubic-bezier(.1,.35,.9,.65) infinite;
 }
 
 
@@ -103,8 +103,14 @@ text-transform: uppercase;
     
 }
 
+.image_effect img{
+    transition: all .5s ease-in-out;
+}
+
 .image_effect:hover img {
     transform: scale(1.05);
+    /* position: relative; */
+    z-index: 1;
 }
 
 @keyframes moveInLeft {

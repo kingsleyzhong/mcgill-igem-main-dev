@@ -1,8 +1,9 @@
-import Link from "next/link";
+import a from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Navbar.module.scss";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -40,13 +41,55 @@ const Navbar = () => {
       </div>
 
       {navOpen && (
-        <div className="fixed w-full h-full text-white">
+        <div className="fixed w-full h-full text-white font-signika font-medium">
           <div className="bothalign">
-            <ul className={styles.navanim}>
-              <li className="text-center">1 About Us</li>
-              <li className="text-center">2 Stuff</li>
-              <li className="text-center">3 Stuff</li>
-            </ul>
+            <div className={styles.navanim}>
+              <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full lg:gap-x-60 lg:gap-y-10 gap-5">
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">About Us</h1>
+                  <ul className="lg:text-xl text-base px-4">
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/about">Our Team</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/mission">Our Mission</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/join">Join Us</Link></li>
+                    </ul>
+                </div>
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Partners</h1>
+                  <ul className="lg:text-xl text-base px-4">
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/sponsors">Sponsors</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/collaborators">Collaborators</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/partner">Partner With Us</Link></li>
+                    </ul>
+                </div>
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Projects</h1>
+                  <ul className="lg:text-xl text-base px-4">
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/current">Current</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/2019">2019</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/2018">2018</Link></li>
+                    </ul>
+                </div>
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Initiatives</h1>
+                  <ul className="lg:text-xl text-base px-4">
+                    <li className="hover:underline hover:cursor-pointer"><a href="https://open.spotify.com/show/1VjEbzN6Im9u79hw0WfYpK?si=a4a3e379e7d64992">STEMcast</a></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">Confernence</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">Biolab Tutorials</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">McGill Course</Link></li>
+                    </ul>
+                </div>
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer"><a href="https://mcgilligem.substack.com/">NEWS</a></h1>
+                </div>
+                <div>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer"><Link href="/contact">Contact Us</Link></h1>
+                </div>
+
+
+
+              </div>
+          
+            </div>
           </div>
         </div>
       )}

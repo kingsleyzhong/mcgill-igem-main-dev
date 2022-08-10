@@ -12,24 +12,14 @@ import Navbar from "../components/common/navbar";
 
 const Test: NextPage = () => {
   return (
-    <body>
-      {/* <Navbar /> */}
-      {/* <img className="h-full" src="/bg-circles.png" /> */}
-      {/* <div className="grid grid-cols-[45%_10%_45%] grid-rows-[40%_20%_40%] text-center h-200">
-        <div className=" border-black border-2 row-span-2">TEXT</div>
-        <div className=" border-black border-2 col-span-2 row-span-2">
-          <img src="/team_pic.png" />
+      <div className="snap-y snap-mandatory w-[100vw] h-[100vw]">
+        <div className="snap-y snap-mandatory snap-center">
+          <img className="h-full" src="/cells.jpg" />
         </div>
-        <div className=" border-black border-2 col-span-2 row-span-2">IMAGE</div>
-        <div className=" border-black border-2 row-span-2">TEXT</div>
-
-      </div> */}
-
-<div className="image_effect w-[110%] ml-[-10%] p-4">
-          <img src="/team_pic.png" />
-          </div>
-          
-    </body>
+        <div className="snap-y snap-mandatory snap-center">
+          <img className="h-full" src="/cells.jpg" />
+        </div>
+      </div>
   );
 };
 
