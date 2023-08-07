@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "sstart": "serve out",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "exp": "next export"
   },
   "dependencies": {
     "next": "12.1.6",

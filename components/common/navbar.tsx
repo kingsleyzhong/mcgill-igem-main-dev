@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="hover:cursor-pointer fixed float-left ml-4 mt-4 h-10 z-[2000]">
         <Link href="/">
           <img
-            src="mcgill-igem-logo.png"
+            src="img/mcgill-igem-logo.png"
             alt="McGill IGEM Logo"
             className="h-full w-full"
           />
@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className={styles.navanim}>
               <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full lg:gap-x-60 lg:gap-y-10 gap-5">
                 <div>
-                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">About Us</h1>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1">About Us</h1>
                   <ul className="lg:text-xl text-base px-4">
                     <li className="hover:underline hover:cursor-pointer"><Link href="/about">Our Team</Link></li>
                     <li className="hover:underline hover:cursor-pointer"><Link href="/mission">Our Mission</Link></li>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Partners</h1>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1">Partners</h1>
                   <ul className="lg:text-xl text-base px-4">
                     <li className="hover:underline hover:cursor-pointer"><Link href="/sponsors">Sponsors</Link></li>
                     <li className="hover:underline hover:cursor-pointer"><Link href="/collaborators">Collaborators</Link></li>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Projects</h1>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1">Projects</h1>
                   <ul className="lg:text-xl text-base px-4">
                     <li className="hover:underline hover:cursor-pointer"><Link href="/current">Current</Link></li>
                     <li className="hover:underline hover:cursor-pointer"><Link href="/2019">2019</Link></li>
@@ -70,11 +70,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1 hover:underline hover:cursor-pointer">Initiatives</h1>
+                  <h1 className="uppercase lg:text-5xl text-xl lg:py-2 py-1">Initiatives</h1>
                   <ul className="lg:text-xl text-base px-4">
                     <li className="hover:underline hover:cursor-pointer"><a href="https://open.spotify.com/show/1VjEbzN6Im9u79hw0WfYpK?si=a4a3e379e7d64992">STEMcast</a></li>
-                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">Confernence</Link></li>
-                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">Biolab Tutorials</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">Conference</Link></li>
+                    <li className="hover:underline hover:cursor-pointer"><a href="https://www.youtube.com/channel/UCwqaOp6Mkj4Ekhd9QRchd6w">Biolab Tutorials</a></li>
                     <li className="hover:underline hover:cursor-pointer"><Link href="/notfound">McGill Course</Link></li>
                     </ul>
                 </div>

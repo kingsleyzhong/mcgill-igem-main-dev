@@ -128,3 +128,11 @@ const Mission: NextPage = () => {
 };
 
 export default Mission;
+
+// export async function getStaticProps() {}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

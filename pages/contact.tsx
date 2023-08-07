@@ -22,7 +22,8 @@ const Contact: NextPage = () => {
           </div>
         </div>
 
-        <form className="w-full max-w-lg py-16 font-signika">
+        <div className="flex flex-row justify-center items-center">
+        <form className="w-[80%]  py-16 font-signika" action="https://maker.ifttt.com/trigger/contact/json/with/key/pCur8-zv7nM3JKVeY7viEYwRTNjT39zYxtkw3bs3vfo" method="post">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -32,14 +33,14 @@ const Contact: NextPage = () => {
                 First Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 text-white border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-200 text-black border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 placeholder="Jane"
               />
-              <p className="text-red-500 text-xs italic">
+              {/* <p className="text-red-500 text-xs italic">
                 Please fill out this field.
-              </p>
+              </p> */}
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
@@ -49,7 +50,7 @@ const Contact: NextPage = () => {
                 Last Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
                 placeholder="Doe"
@@ -65,7 +66,7 @@ const Contact: NextPage = () => {
                 E-mail
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
               />
@@ -83,7 +84,7 @@ const Contact: NextPage = () => {
                 Message
               </label>
               <textarea
-                className=" no-resize appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                className=" no-resize appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
               ></textarea>
               <p className="text-gray-600 text-xs italic">
@@ -93,19 +94,31 @@ const Contact: NextPage = () => {
           </div>
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
-              <button
+              {/* <button
                 className="shadow bg-mcgill-red focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 font-thin"
                 type="button"
               >
                 SEND
-              </button>
+              </button> */}
+                
+              <input type="submit" value="SEND" className="shadow bg-mcgill-red focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 font-thin"/>
             </div>
             <div className="md:w-2/3"></div>
           </div>
         </form>
+        </div>
+        {/* </div> */}
       </div>
     </Layout>
   );
 };
 
 export default Contact;
+
+// export async function getStaticProps() {}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

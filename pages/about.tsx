@@ -13,7 +13,7 @@ const About: NextPage = () => {
           <div className="py-10 capitalize font-signika font-light tracking-tight text-3xl">
             ABOUT US
           </div>
-          <div className="capitalize font-signika font-medium tracking-tight text-8xl">
+          <div className="capitalize font-signika font-medium tracking-tight text-8xl -mt-5">
             OUR TEAM
           </div>
           <div className="py-10 capitalize font-mono font-bold tracking-tight text-l">
@@ -24,10 +24,13 @@ const About: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black text-white py-10 pr-10">
-        <div className="text-right w-full font-mono px-2 pb-4">2022</div>
+
+      <div className="pl-20 bg-black">
+
+      <div className="bg-black text-white py-16 pr-10">
+        <div className="text-right w-full font-mono px-2 pb-4 text-3xl">2022</div>
         <div className="grid grid-cols-5 gap-2">
-            <div className="font-mono text-center uppercase">Leadership</div>
+            <div className="font-mono font-bold text-left uppercase text-4xl border-t-2 -mt-4 pt-2 border-mcgill-red">Leadership</div>
             <Person name="Jesse Lee"/>
             <Person name="Albert Nitu"/>
             <Person name="Hanwen Wang"/>
@@ -43,20 +46,20 @@ const About: NextPage = () => {
         
       </div>
         <div className="grid grid-cols-5 gap-2 py-10">
-            <div className="font-mono text-center uppercase">Wet Lab</div>
+            <div className="ffont-mono font-bold text-left uppercase text-4xl">Wet Lab</div>
             <Person name="Jade Tong"/>
             <Person name="Elliott Cole"/>
             <Person name="Jonathan Cheng"/>
             <Person name="Rylan Donohoe"/>
 
             <div></div>
-            <Person name="IMG_0743 1"/>
+            <Person name="Mysha Ibnat"/>
             <Person name="Huanyi Zhang"/>
             <Person name="Stephen Lu"/>        
       </div>
       
         <div className="grid grid-cols-5 gap-2 py-10">
-            <div className="font-mono text-center uppercase">Dry Lab</div>
+            <div className="font-mono font-bold text-left uppercase text-4xl">Dry Lab</div>
             <Person name="Huilin Liang"/>
             <Person name="Anita Kriz"/>
             <Person name="Jessica Zhu"/>
@@ -65,20 +68,31 @@ const About: NextPage = () => {
       </div>
 
         <div className="grid grid-cols-5 gap-2 py-10">
-            <div className="font-mono text-center uppercase">Graduate Advisor</div>
-            <Person name="Ansley Gnana-pragasam"/>
+            <div className="font-mono font-bold text-left uppercase text-4xl">Graduate Advisor</div>
+            <Person name="Ansley Gnanapragasam"/>
             <Person name="Faiz Hussain"/>
             <Person name="Christien Dykstra"/>
             <Person name="Clara MacMahon"/>
             <div />
             <Person name="Eduardo Cepeda-Canedo"/>
             <Person name="Smriti Suresh"/>
-            <Person name="Jesse Lee2"/>
+            <Person name="Ilhem Chaima Bousbiat"/>
  
       </div>
       </div>
+      </div>
+
     </Layout>
   );
 };
 
 export default About;
+
+
+// export async function getStaticProps() {}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

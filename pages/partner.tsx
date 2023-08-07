@@ -28,12 +28,24 @@ const Collaborators: NextPage = () => {
           <p className="text-mcgill-red py-5"> Shoot us a message.</p>
         </div>
       </div>
-      <h2 className="text-4xl my-8 pl-20 font-signika">
+      <h2 className="text-4xl my-8 pl-20 font-signika h-full">
             Sponsorship Package
           </h2>
-          <iframe src="https://drive.google.com/file/d/1AKULftZUtHir_HnewGkoBOIm4M4-01zs/preview" width="640" height="480" allow="autoplay" className="w-full px-20"></iframe>
+          <div className="py-4">
+
+          <iframe src="https://drive.google.com/file/d/1AKULftZUtHir_HnewGkoBOIm4M4-01zs/preview" width="640" height="1000" allow="autoplay" className="w-full px-20"></iframe>
+          </div>
     </Layout>
   );
 };
 
 export default Collaborators;
+
+
+// export async function getStaticProps() {}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

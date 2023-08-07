@@ -26,3 +26,11 @@ const Project: NextPage = () => {
 }
 
 export default Project;
+
+// export async function getStaticProps() {}
+
+export async function getStaticProps() {
+    return {
+      props: {},
+    };
+  }

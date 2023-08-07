@@ -47,8 +47,8 @@ const Standard: NextPage = () => {
           <div className="h-full w-full mx-5">
             <a href="https://ssmu.ca/" className="">
               <Image
-                width={406}
-                height={301}
+                width={306}
+                height={200}
                 layout="responsive"
                 src="/sponsors/SSMU.png"
               />
@@ -112,7 +112,7 @@ const Standard: NextPage = () => {
           </div>
         </div>
 
-        <div className="h-full w-[80%] py-5 flex flex-row justify-center items-center">
+        <div className="w-[80%] py-5 flex flex-row justify-center items-center">
           {/* <div className="border-4 border-mcgill-red h-20 w-20 mx-5"></div>
             <div className="border-4 border-mcgill-red h-20 w-20"></div> */}
           <div className="h-full w-full mx-5">
@@ -135,13 +135,13 @@ const Standard: NextPage = () => {
               />
             </a>
           </div>
-          <div className="w-full mx-5">
-            <a href="https://biorender.com/" className="">
+          <div className="h-full w-full mx-5">
+            <a href="https://zbiotics.com/" className="">
               <Image
-                width={148}
-                height={120}
+                width={1200}
+                height={158}
                 layout="responsive"
-                src="/sponsors/bio.png"
+                src="/sponsors/zbiotics.png"
               />
             </a>
           </div>
@@ -199,3 +199,10 @@ const Standard: NextPage = () => {
 };
 
 export default Standard;
+
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

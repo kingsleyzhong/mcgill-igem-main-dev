@@ -26,3 +26,5 @@ const Standard: NextPage = () => {
 }
 
 export default Standard;
+
+// export async function getStaticProps() {}

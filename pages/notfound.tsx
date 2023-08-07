@@ -26,3 +26,11 @@ const Collaborators: NextPage = () => {
 }
 
 export default Collaborators;
+
+// export async function getStaticProps() 
+
+export async function getStaticProps() {
+    return {
+      props: {},
+    };
+  }

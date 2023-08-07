@@ -39,6 +39,14 @@ const MyApp = ({
         router.events.on('routeChangeError', handleComplete);
       }, [router]);
 
+      
+
+      useEffect(() => {
+        window.addEventListener('load', () => {  
+          console.log("page is loaded")  
+        })
+    },[]);
+
 return (
   <div>
     {pageLoading ? <Loading/> :  <Component {...pageProps} />}
